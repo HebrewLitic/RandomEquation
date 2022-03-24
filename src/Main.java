@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.reflect.Method;
 import java.util.Random;
 
 
@@ -64,14 +63,14 @@ class Main {
         //if the answer is the same as the value (Number + operation + number)
         if (scan == value) {
             System.out.println("Correct!");
-        }
-        if (scan != value) {
+        } else {
             System.out.println("Incorrect. Correct answer is " + value);
         }
                    
         
         
         //New equation when Scan == value statement when you get a correct answer.
+        if (scan == value) {
         do {
         
             number1 = opRand.nextInt(100);
@@ -127,10 +126,11 @@ class Main {
                 //if the input is not the same as the value, incorrect
                 if (scan != value) {
                     System.out.println("Sorry! Wrong answer. Correct answer: " + value);
-            }
+                }
                     
-        } while(scan == value);
+            } while(scan == value);
         
+        } 
     } 
-} 
+}
  
