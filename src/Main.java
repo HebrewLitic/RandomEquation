@@ -67,6 +67,7 @@ class Main {
         //your input for answer
         int scan = scanner.nextInt();
 
+
         //if the answer is the same as the value, the answer is correct
         //if the answer is not the same as the value, the answer is incorrect
         if (scan == value) {
@@ -76,7 +77,7 @@ class Main {
         }
                    
         
-        //If
+        //If 
         //New equation when Scan == value statement when you get a correct answer.
         if (scan == value) {
             do {
